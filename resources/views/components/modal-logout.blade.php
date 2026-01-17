@@ -1,5 +1,7 @@
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<!-- modal logout (popup konfirmasi logout)-->
+ <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
       aria-hidden="true">
+      <!-- container dialog modal-->
       <div class="modal-dialog" role="document">
           <div class="modal-content">
               <div class="modal-header">
