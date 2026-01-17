@@ -27,7 +27,7 @@ class LowonganController extends Controller
     $user = $request->user();
 
     $data['lowongans'] = Lowongan::when($user->role != "admin", function ($query) {
-      $query->where('tgl_buka', '>=', date('Y-m-d'));
+      $query->where('tgl_buka', '<=', date('Y-m-d'));
     })->when($filter['search'], function ($query) use ($filter) {
       $search = strtolower($filter['search']);
       $query->where(function ($query2) use ($search) {

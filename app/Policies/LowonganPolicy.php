@@ -30,7 +30,7 @@ class LowonganPolicy
    */
   public function view(User $user, Lowongan $lowongan)
   {
-    return $user->role == 'admin' || $lowongan->tgl_buka >= date('Y-m-d');
+    return $user->role == 'admin' || $lowongan->tgl_buka <= date('Y-m-d');
   }
 
   /**
